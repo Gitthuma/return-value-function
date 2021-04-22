@@ -31,3 +31,11 @@ function factorial(num) {
     return num;
 
 }
+
+/*Include a way to print out information about the number entered into the text input.*/
+
+/*Creat an onchange event handler. It runs whenever the change event fires on the text input — that is, when a new value is entered into the text input, and submitted (e.g., enter a value, then unfocus the input by pressing Tab or Return). When this anonymous function runs, the value in the input is stored in the num constant.*/
+
+input.onchange = function() {
+    const num = input.value;
+}
