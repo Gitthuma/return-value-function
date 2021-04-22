@@ -36,6 +36,13 @@ function factorial(num) {
 
 /*Creat an onchange event handler. It runs whenever the change event fires on the text input — that is, when a new value is entered into the text input, and submitted (e.g., enter a value, then unfocus the input by pressing Tab or Return). When this anonymous function runs, the value in the input is stored in the num constant.*/
 
+/*Do a conditional test. If the entered value is not a number, an error message is printed to the paragraph. The test looks at whether the expression isNaN(num) returns true. The isNaN() function to test whether the num value is not a number — if so, it returns true, and if not, it returns false.*/
+
 input.onchange = function() {
     const num = input.value;
+    
+    if(isNaN(num)) {
+        para.textContent = 'You need to enter a number!';
+    }
 }
+
