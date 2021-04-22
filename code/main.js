@@ -8,3 +8,9 @@ const para = document.querySelector('p');
 function squared(num){
     return num * num;
 }
+
+/*Returns a cubed number*/
+
+function cubed(num) {
+    return num * num * num;
+}
