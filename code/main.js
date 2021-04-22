@@ -38,11 +38,17 @@ function factorial(num) {
 
 /*Do a conditional test. If the entered value is not a number, an error message is printed to the paragraph. The test looks at whether the expression isNaN(num) returns true. The isNaN() function to test whether the num value is not a number — if so, it returns true, and if not, it returns false.*/
 
+/*If the test returns false, the num value is a number. Therefore, a sentence is printed out inside the paragraph element that states the square, cube, and factorial values of the number. The sentence calls the squared(), cubed(), and factorial() functions to calculate the required values.*/
+
 input.onchange = function() {
     const num = input.value;
-    
+
     if(isNaN(num)) {
         para.textContent = 'You need to enter a number!';
+    } else {
+        para.textContent = num + ' square is ' + squared(num) + '. ' +
+                            num + ' cubed is ' + cubed(num) + '. ' +
+                            num + ' factorial is ' + factorial(num) + '.';
     }
 }
 
